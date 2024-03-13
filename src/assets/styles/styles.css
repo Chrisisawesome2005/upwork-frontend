@@ -1,0 +1,242 @@
+/*HELPERS*/
+body {
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #f58d17;
+}
+
+a:hover {
+  color: #d07309;
+}
+
+.btn-brand {
+  background-color: #f58d17;
+  color: white;
+  border-color: #f58d17;
+  padding: 16x 32px;
+}
+
+.btn-brand:hover {
+  background-color: #d07309;
+  color: white;
+  border-color: #f58d17;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #f58d17;
+}
+
+.card-effect {
+  box-shadow: 10px 18px 30px rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.stars {
+  color: #f58d17;
+}
+
+/*NAVBAR*/
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: #f58d17;
+}
+
+/*HERO*/
+.hero-item {
+  height: 100dvh;
+}
+.hero-item h4,
+.hero-item h1 {
+  color: white;
+}
+.hero-item h1 {
+  font-weight: bold;
+}
+
+.slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*MENU*/
+#menu .nav-tabs .nav-link.active {
+  background-color: #f58d17;
+  color: white;
+}
+#menu .nav-tabs .nav-link {
+  color: #333;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+#menu .nav-tabs .nav-link:hover {
+  border-color: #f58d17;
+}
+#menu .menu-item .img {
+  width: 100%;
+}
+
+/*FEATURES*/
+#features {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#features .feature {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#features .feature i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #f58d17;
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+}
+
+/*TEAM*/
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: -10px -10px #f58d17;
+}
+
+/*REVIEW*/
+#review .carousel-indicators {
+  margin-bottom: -3rem;
+}
+
+#review {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover1.jpg);
+}
+
+.review {
+  background-color: white;
+}
+.review .quotes {
+  background-color: white;
+  color: #f58d17;
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+}
+.review img {
+  width: 100px;
+}
+
+#review .carousel-control-prev-icon,
+#review .carousel-control-next-icon {
+  background-color: #f58d17;
+}
+
+/*RESERVATION*/
+#reservation .form-control {
+  box-shadow: none;
+}
+#reservation .form-control:focus {
+  border-color: #f58d17;
+}
+
+/*INSTAPOST*/
+.insta-post {
+  position: relative;
+  overflow: hidden;
+}
+.insta-post i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.insta-post img {
+  transition: all 0.3s ease;
+}
+.insta-post a {
+  color: #333;
+}
+.insta-post a:hover {
+  color: #f58d17;
+}
+
+.insta-post:hover i {
+  opacity: 1;
+}
+.insta-post:hover img {
+  transform: scale(1.1);
+}
+
+/*BLOG*/
+.blog-post {
+  display: flex;
+  flex-direction: column;
+}
+.blog-post img {
+  height: 200px;
+}
+.blog-post a,
+.blog-post p {
+  margin-top: auto;
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover1.jpg);
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=styles.css.map */

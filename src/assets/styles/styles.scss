@@ -1,0 +1,255 @@
+$brand: #f58d17;
+$brand-dark: darken($brand, 10%);
+$font: "Arial", sans-serif;
+$transition: all 0.3s ease;
+$dark-color: #333;
+$shadow: 10px 18px 30px rgba(0, 0, 0, 0.075);
+
+/*HELPERS*/
+
+body {
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: $dark-color;
+}
+a {
+  text-decoration: none;
+  color: $brand;
+}
+a:hover {
+  color: $brand-dark;
+}
+
+.btn-brand {
+  background-color: $brand;
+  color: white;
+  border-color: $brand;
+  padding: 16x 32px;
+}
+.btn-brand:hover {
+  background-color: $brand-dark;
+  color: white;
+  border-color: $brand;
+}
+
+img {
+  width: 100%;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: $brand;
+}
+
+.card-effect {
+  box-shadow: $shadow;
+  transition: $transition;
+}
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.stars {
+  color: $brand;
+}
+
+/*NAVBAR*/
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: $brand;
+}
+
+/*HERO*/
+.hero-item {
+  height: 100dvh;
+  h4,
+  h1 {
+    color: white;
+  }
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*MENU*/
+#menu {
+  .nav-tabs .nav-link.active {
+    background-color: $brand;
+    color: white;
+  }
+  .nav-tabs .nav-link {
+    color: $dark-color;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+  }
+  .nav-tabs .nav-link:hover {
+    border-color: $brand;
+  }
+
+  .menu-item {
+    .img {
+      width: 100%;
+    }
+  }
+}
+
+/*FEATURES*/
+#features {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover2.jpg);
+  background-position: center;
+  background-size: cover;
+  .feature {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: $brand;
+      height: 60px;
+      width: 60px;
+      font-size: 40px;
+    }
+  }
+}
+
+/*TEAM*/
+.team-member {
+  img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: -10px -10px $brand;
+  }
+}
+
+/*REVIEW*/
+#review .carousel-indicators {
+  margin-bottom: -3rem;
+}
+#review {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover1.jpg);
+}
+.review {
+  background-color: white;
+  .quotes {
+    background-color: white;
+    color: $brand;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+  }
+  img {
+    width: 100px;
+  }
+}
+#review .carousel-control-prev-icon,
+#review .carousel-control-next-icon {
+  background-color: $brand;
+}
+
+/*RESERVATION*/
+#reservation {
+  .form-control {
+    box-shadow: none;
+  }
+  .form-control:focus {
+    border-color: $brand;
+  }
+}
+
+/*INSTAPOST*/
+.insta-post {
+  position: relative;
+  overflow: hidden;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: $transition;
+  }
+  img {
+    transition: $transition;
+  }
+  a {
+    color: $dark-color;
+  }
+  a:hover {
+    color: $brand;
+  }
+}
+
+.insta-post:hover {
+  i {
+    opacity: 1;
+  }
+  img {
+    transform: scale(1.1);
+  }
+}
+
+/*BLOG*/
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 200px;
+  }
+  a,
+  p {
+    margin-top: auto;
+  }
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover1.jpg);
+  background-position: center;
+  background-size: cover;
+}
